@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vraag een Offerte | Concrete Projects</title>
+  <link rel="canonical" href="https://www.concreteprojectsbv.be/offerte">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Vraag een offerte aan bij Concrete Projects B.V. voor betonkelders, betonvloeren en meer. Vul het formulier in en wij nemen contact op." />
+  <meta name="keywords" content="offerte, betonkelders, betonvloeren, netten leggen, bekisting, polieren, betonwerken, Limburg, Beverlo" />
+  <meta name="author" content="Concrete Projects B.V." />
+  <meta property="og:title" content="Vraag een Offerte | Concrete Projects" />
+  <meta property="og:description" content="Vraag een offerte aan bij Concrete Projects B.V. voor betonkelders, betonvloeren en meer." />
+  <meta property="og:image" content="https://www.concreteprojectsbv.be/images/logo.png" />
+  <meta property="og:url" content="https://www.concreteprojectsbv.be/offerte.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html#home" class="brand" aria-label="Concrete Projects home">
+        <img src="images/logo.png" alt="Concrete Projects logo" class="logo" />
+        <span class="sr-only">Concrete Projects B.V.</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="mainNav" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#about">Over ons</a></li>
+          <li><a href="index.html#services">Onze Diensten</a></li>
+          <li><a href="offerte.html" class="active">Offerte</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- OFFERTE sectie -->
+    <section class="section alt-bg" id="quote">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Vraag een Offerte</h2>
+          <p>Selecteer de gewenste diensten, vul uw contactgegevens in en beschrijf uw project. Wij nemen spoedig contact met u op.</p>
+          <p><strong>E-mail:</strong> <a href="mailto:concreteprojects.bv@gmail.com">concreteprojects.bv@gmail.com</a></p>
+        </div>
+
+        <form id="quoteForm" class="contact-form" aria-label="Offerte formulier" action="https://formsubmit.co/concreteprojects.bv@gmail.com" method="POST" enctype="multipart/form-data" target="_blank">
+          <label>
+            Naam
+            <input type="text" id="quoteName" name="name" required placeholder="Uw naam">
+          </label>
+
+          <label>
+            Telefoon
+            <input type="tel" id="quotePhone" name="phone" placeholder="+32 ...">
+          </label>
+
+          <label>
+            E-mail
+            <input type="email" id="quoteEmail" name="email" required placeholder="naam@voorbeeld.be">
+          </label>
+
+          <fieldset>
+            <legend>Gewenste Diensten (selecteer een of meer)</legend>
+            <label class="checkbox-label">
+              <input type="checkbox" name="services" value="betonkelders"> Betonkelders
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="services" value="betonvloeren_industrieel"> Betonvloeren (industrieel)
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="services" value="betonvloeren_residentieel"> Betonvloeren (residentieel)
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="services" value="injecteren"> Injecteren
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="services" value="polieren"> Polieren of Polijsten
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="services" value="bekisting_werk"> Bekisting-werk
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="services" value="netten_leggen"> Netten leggen of binden
+            </label>
+          </fieldset>
+
+          <label>
+            Beschrijving van het Opdracht
+            <textarea id="quoteDescription" name="description" rows="6" required placeholder="Beschrijf uw project, wensen en eventuele specifieke eisen..."></textarea>
+          </label>
+
+          <label>
+            Bijlagen (optioneel: foto's, documenten, tekeningen)
+            <input type="file" id="quoteFiles" name="files" multiple accept="image/*,.pdf,.doc,.docx">
+            <small>Kies bestanden om bij te voegen. Deze worden niet automatisch verzonden; voeg ze handmatig toe aan de e-mail na verzending.</small>
+          </label>
+
+          <!-- Formsubmit control fields -->
+          <input type="hidden" name="_subject" value="Offerte-aanvraag via website">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Verstuur Offerte-aanvraag</button>
+            <button type="reset" id="resetQuoteForm" class="btn">Reset</button>
+          </div>
+
+          <p class="form-note">Bij verzenden wordt uw e-mailbericht in uw e-mail geopend. Voeg eventuele bijlagen handmatig toe en bevestig verzending.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <small>&copy; Concrete Projects B.V. | Alle rechten voorbehouden.</small>
+      </div>
+      <div class="footer-contact">
+        <span>Tel: <a href="tel:+32489598231">+32 489 59 82 31</a></span>
+        <a href="https://www.instagram.com/concrete_projects_bv/" target="_blank" rel="noopener" aria-label="Volg ons op Instagram" class="social-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Concrete Projects B.V.",
+    "url": "https://www.concreteprojectsbv.be/",
+    "logo": "https://www.concreteprojectsbv.be/images/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+32-489-59-82-31",
+      "contactType": "customer service"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Onderwijsstraat 12",
+      "addressLocality": "Beverlo",
+      "addressRegion": "Limburg",
+      "postalCode": "3583",
+      "addressCountry": "BE"
+    },
+    "sameAs": [
+      "https://www.instagram.com/concrete_projects_bv/"
+    ]
+  }
+  </script>
+  <script src="index.js" defer></script>
+</body>
+</html>
