@@ -25,7 +25,7 @@ const projectSummaries = {
 }
 
 const projectTitles = {
-  1: 'Betonnen kelder in Geleen',
+  1: 'Betonnen kelder ',
   2: 'Industriele vloeren',
   3: 'Betonnen vloer voor fabriek',
   4: 'Betonnen muur',
